@@ -1,0 +1,184 @@
+目前，由Facebook开发的前端框架React很流行。据说其性能较其他的前端工具有很大的提升。随着越来越多的人的关注，React被认为可能是将来Web开发的主流工具。
+
+对于我自己来说，本身我是做后端的。但是现在Javascript是如此的强大，掌握一个前端框架我觉的是作为一名程序员必不可少的技能。既然React如此火爆，选择React也是顺理成章的了。
+
+我开始学习React的时候只是搭建环境就用了很长的时间。主要因为这是一门新的技术，操作的教程还是比较匮乏。但是对于入门的文章我个人还是比较推崇阮一峰老师的这一篇React 入门实例教程。
+
+下面我们主要来介绍如何搭建React运行环境（总是感觉题目叫做搭建React运行环境总是不那么准确，因为React可以说是一个前端框架，也可以说是一个类库。运行环境自然需要浏览器的支持。与其叫搭建运行环境倒不如叫做如何引用React）。
+
+这里有两种方式，一种是使用npm，另一种是不使用npm。下面我们先来看不使用npm的方式。
+
+不用npm的方式引入React
+
+对于这种方式，我们需要首先下载React和React-dom的库文件。然后引入到html文件中。
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script type="text/babel">
+      ReactDOM.render(
+        <h1>Hello, world!</h1>,
+        document.getElementById(‘content’)
+      );
+    </script>
+  </body>
+</html>
+
+上面的例子中，在Javascript中的XML语法被称为JSX，对于这种语法，在<script>标签中其type必须为“text/babel”。但是这种语法是无法直接被浏览器解析的，因此需要上面的第三个文件browser.min.js将这种Js转换成原生的Js代码，然后再由react.js和react-dom.js解析自己的语法来执行。当然这里面涉及到一个知识点，那就是babel。至于对babel的详细了解本篇文章不做介绍，我们可以认为其就是一个转换器，当然这个转换是通过browser.min.js来进行的。
+
+下面我们可以将上面html中的JSX代码分离出来，单独写到一个文件src/hw.js中
+
+ReactDOM.render(
+    <h1>Hello, world!</h1>,
+    document.getElementById(‘content’)
+);
+
+因此上述html可以更新为如下代码：
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script type="text/babel" src=”src/hw.js”></script>
+  </body>
+</html>
+
+这里需要注意，这种情况有的浏览器（例如谷哥浏览器）是无法加载src/hw.js的，只能通过http地址的方式才可以加载。这是官网上说的，我没有验证过，不过我们最好是通过url绝对地址的方式来引入上面的文件。
+
+对于这样的方式，其实最消耗时间的是通过babel将JSX转换成Javascript语法的过程。因此我们通常是将这一步放在服务器上面执行的。也就是说我们一般情况下是不直接在客户端使用buile/browser.min.js来转换JSX的。所以在浏览器解析之前就已经由服务器直接转换完成，客户端直接去调用转换完成的文件即可。
+
+服务器端转换
+
+首先我们应该在服务器端先安装babel
+
+# npm install –global babel-cli
+# npm install babel-preset-react
+
+然后开始转换我们先前新建的src/hw.js文件
+
+# babel –presets react src –watch –out-dir build
+通过以上的命令build/hw.js文件就生成了，这个文件里都是普通的javascript语法代码。
+
+这里需要说明的是，src是存放资源文件的文件夹，也就是我们写的那些源代码，build是存放客户端引入的文件，也就是生成的文件。而—watch是监听src文件夹里的资源的文件是否有变化，如果有变化则自动生成相应的文件。
+
+现在我们的html代码又可以更新为一下内容了。
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+   <!—这里不需要 browser.min.js 文件了  -->
+  </head>
+  <body>
+<div id="content"></div>
+<!--  这里type 也将改成 text/javascript  或者省略不写type  -->
+    <script type="text/javascript" src=”build/hw.js”></script>
+  </body>
+</html>
+
+上面就是我们不使用npm的方式，看起来还是比较麻烦的。为了使用方便我们可以使用npm的方式来使用React。
+
+使用npm引用React
+
+使用这种方式，可以有两种方法管理，一种是browserify，另一种是webpack。由于我个人在刚开始学的时候直接使用的是webpack，对于browserify我没有用过，为了不误导大家，我在这里就略过browserify，直接使用webpack。
+
+首先我们应该做的是新建一个项目 /react
+
+#mkdir /react
+#cd /react
+#npm init   初始化项目，这一步会有一些选项让你输入。输入完成以后会在项目目录下产生一个package.json文件
+
+然后安装react库和react-dom 库和一些工具。
+
+#npm install –save react react-dom
+#npm install –save-dev babel-preset-react
+
+接着是安装webpack。
+
+#npm install –save-dev webpack
+
+安装完成以后会在项目目录下面生成一个node_modules 目录，所有安装的模块都在这个目录下面，其中包括webpack。而webpack的命令同样也在这个目录下面。使用起来非常不方便。我个人习惯是在项目目录下单独新建一个bin目录，里面存放所有常用命令的快捷方式。就拿我们的webpack来说。
+
+#ln –s /react/node_modules/webpack/bin/webpack.js /react/bin/webpack
+
+这样只要我们处于项目目录下面，我们就可以使用 bin/webpack这个命令了。在开始使用webpack打包项目之前，我们需要做最重要的一步，那就是编写webpack的配置文件webpack.config.js，内容如下
+
+module.exports={
+    entry: {
+        module:'./src/index.js',
+    },
+    output:{
+        path: './build',
+        filename: 'bundle.js',
+    },
+    module:{
+        loaders:[
+            {
+                test: /\.js$/,
+                loader: 'babel',
+                query:{
+                    presets:['react']
+                }
+            }
+        ],
+    }
+}
+
+对于webpack的配置文件的语法可以参考官网的教程。
+
+接下来我们开始写我们的代码 src/index.js
+
+var React = require('react');
+var ReactDOM = require('react-dom');
+ 
+ReactDOM.render(
+  <h1>Hello, world!</h1>,
+  document.getElementById(‘content’)
+);
+
+最后开始打包
+
+#bin/webpack
+
+执行完成以后我们就可以在项目目录下面看到有build文件夹，里面有js文件bundle.js。
+
+我们亦可以使用—watch来监听src中的资源文件是否有变化，如果有变化将自动打包。
+
+#bin/webpack –watch
+
+然后呢，我们的html可以改成如下的代码：
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+  </head>
+  <body>
+<div id="content"></div>
+<!--  这里type 也将改成 text/javascript  或者省略不写type  -->
+    <script type="text/javascript" src=”build/bundle.js”></script>
+  </body>
+</html>
+
+是不是管理起来更简单了，react和react-dom都不需要在html中引入了。
+
+以上即是搭建React运行环境的两种方式。由于我也是刚开始接触React不久，所以有些不准确或不详细的地方还请大家指正。
