@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>3D滚动</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
+    
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 1,
+          separation: 200,
+          opacityMultiplier: 0.3,
+          horizonOffset: 2
+          });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+    
+
+      });
+    </script>
+
+    <style type="text/css">
+      body {
+        font-family:Arial;
+        font-size:12px;
+        background:#ededed;
+      }
+
+      #carousel {
+      	margin: 0 auto;
+        width:660px;
+        border:1px solid #222;
+        height:300px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+        background:#FFF;
+      }
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+       display: block;
+        width:300px;
+        height:300px;
+       border: 1px solid #CCCCCC;
+       border-radius: 50%;       
+      }
+      .btn{
+      	position: absolute;
+      	top: 50%;
+      	margin-top: -15px;
+      	display: block;
+      	width: 50px;
+        height: 30px;
+        background-color: red;
+        color: #000000;
+        text-align: center;
+        line-height: 30px;
+      }
+      .btn.prev{
+      	left: 0;
+      }
+      .btn.next{
+      	right: 0;
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <div id="carousel">
+    	 <a href="#" class="btn prev" id="prev">Prev</a><a href="#" class="btn next" id="next">Next</a>
+      <a href="#"><img src="images/1.jpg" id="item-1" /></a>
+      <a href="#"><img src="images/2.jpg" id="item-2" /></a>
+      <a href="#"><img src="images/3.jpg" id="item-3" /></a>
+    </div>
+  </body>
+</html>
+

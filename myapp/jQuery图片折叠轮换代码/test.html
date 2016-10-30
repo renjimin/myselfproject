@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	div{
+	width:300px;
+	height:300px;
+	background:red;
+	position:absolute;
+	left:-300px;
+
+}
+span{
+	display: block;
+	width: 20px;
+	height:80px; 
+	position:absolute;
+	top:125px;
+	right: -20px;
+	background-color: blue;
+	text-align: center;
+	line-height: 25px;
+}
+.扩大奖金池 {
+  background-image: url("扩大奖金池.png");
+  position: absolute;
+  left: 177px;
+  top: 232px;
+  width: 749px;
+  height: 394px;
+  z-index: 30;
+}
+._5528b66839c3f {
+  background-image: url("5528b66839c3f.png");
+  position: absolute;
+  left: -17px;
+  top: 186px;
+  width: 1145px;
+  height: 458px;
+  z-index: 27;
+}
+
+
+	</style>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function(){	
+		
+		$('span').click(function(){
+			
+			//console.log(t);
+			if (this == false) {
+				$('div').animate({'left':'0px'});
+				console.log(t);
+				return true;
+			}else {
+				$('div').animate({'left':'-300px'});
+				return false;
+				console.log(t);
+			}
+									
+		})
+
+	})
+</script>
+</head>
+<body>
+	<div>
+	<span>侧边栏</span>
+	</div>
+</body>
+<ml>

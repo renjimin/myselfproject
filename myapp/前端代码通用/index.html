@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body{
+				height: 2000px;
+				background-color: #CCCCCC;
+			}
+			#gotop {
+			    display: none;
+			    cursor: pointer;
+			    width: 46px;
+			    height: 46px;
+			    position: fixed;
+			    bottom: 80px;
+			    right: 0px;
+			    background: url(images/top.png) center center no-repeat;
+			    background-size: 100% 100%;
+			    overflow: hidden;
+			}
+		</style>
+		<script type="text/javascript">
+		$(function(){
+				 //返回顶部
+	        $(window).scroll(function(){
+	            //获取窗口已滚动的高度
+	            var windowScrollTop=$(window).scrollTop();
+	            var oTools=$("#gotop");
+	            //如果大约240PX，就渐显出“回到顶部”，否则即隐藏
+	            if(windowScrollTop>240)
+	            {
+	                oTools.fadeIn();
+	            }else{
+	                oTools.fadeOut();
+	            }
+	        });
+	        $("#gotop").click(function(){
+	            //点击“回到顶部”，滚动到顶部，并带动画效果
+	            $("html,body").animate({scrollTop:0},500);
+	        });
+		});
+		</script>
+	</head>
+	<body>
+		<div id="gotop">
+		</div>
+	</body>
+</html>

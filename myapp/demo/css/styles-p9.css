@@ -1,0 +1,1481 @@
+.color-chooser__color {
+	display: none
+}
+
+.color-chooser__color--black span:after {
+	background-color: #000
+}
+
+.color-chooser__color--white span:after {
+	background-color: #fff
+}
+
+.color-chooser__color--blue span:after {
+	background-color: #4eb3f2
+}
+
+.color-chooser__color--red span:after {
+	background-color: #e83554
+}
+
+.color-chooser__color--rose-gold span:after {
+	background-color: #e4c9c9
+}
+
+.color-chooser__color--gold span:after {
+	background-color: #ceab83
+}
+
+.color-chooser__color--grey span:after {
+	background-color: #9f9f9f
+}
+
+.color-chooser__color--Prestige-gold span:after {
+	background-color: #e4dcd0
+}
+
+.color-chooser__color--ceramic-white span:after {
+	background-color: #fcfcfc
+}
+
+.color-chooser__color--titanium-grey span:after {
+	background-color: #a5a5a5
+}
+
+.color-chooser__color--haze-gold span:after {
+	background-color: #ceab83
+}
+
+.color-chooser__color--mystic-silver span:after {
+	background-color: #dad9d7
+}
+
+.color-chooser__color+label span {
+	position: relative;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	border-radius: 18px;
+	background-color: #f0f0f0;
+	content: ' ';
+	cursor: pointer;
+	margin-right: 2px;
+	-webkit-transition: background-color .2s;
+	transition: background-color .2s
+}
+
+.color-chooser__color+label span--red {
+	background-color: #ef2f34
+}
+
+.color-chooser__color:checked+label span {
+	background-color: #999
+}
+
+.color-chooser__color+label span:before {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	background-color: #f0f0f0;
+	content: ' '
+}
+
+.color-chooser__color+label span:after {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 28px;
+	height: 28px;
+	border-radius: 14px;
+	content: ' '
+}
+
+.collapsible__content {
+	display: block
+}
+
+.collapsible__header {
+	cursor: pointer
+}
+
+.collapsible--collapsed .collapsible__content {
+	display: none
+}
+
+.page-divider {
+	position: relative;
+	height: 10vw;
+	overflow: hidden
+}
+
+.page-divider--hero {
+	bottom: 0;
+	border-left-width: 66.5vw;
+	border-color: transparent #fff #fff
+}
+
+.page-divider--buy-panel,
+.page-divider--hero {
+	position: absolute;
+	left: calc((100vw - 100%) * -.5);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-top-width: 10vw;
+	border-right-width: 33vw;
+	border-bottom-width: 0;
+	z-index: 1
+}
+
+.page-divider--buy-panel {
+	border-left-width: calc(66vw - 10px);
+	border-color: #fff transparent transparent
+}
+
+.social-share {
+	margin-top: 20px
+}
+
+.social-share .share__block {
+	cursor: pointer
+}
+
+.social-share .share__block .cell-- {
+	width: 40px;
+	height: 40px
+}
+
+.social-share .share__block .text--,
+.social-share .share__block svg path {
+	-webkit-transition: all linear .2s;
+	transition: all linear .2s
+}
+
+.social-share .share__block:hover svg path {
+	fill: #999
+}
+
+.social-share .share__block.open-- svg path {
+	fill: #333
+}
+
+.social-share .share-sub__block {
+	margin-top: 20px;
+	height: 10px;
+	overflow: hidden;
+	-webkit-transition: all ease .3s;
+	transition: all ease .3s;
+	width: 100%
+}
+
+.social-share .share-sub__block input::-ms-clear {
+	display: none
+}
+
+.social-share .share-sub__block.active-- {
+	height: 40px
+}
+
+.social-share .share-sub__block .conceal-- {
+	opacity: .01
+}
+
+.social-share .facebook-- {
+	margin-right: 15px;
+	width: 40px;
+	height: 40px
+}
+
+.social-share .facebook-- svg circle {
+	-webkit-transition: all linear .2s;
+	transition: all linear .2s;
+	cursor: pointer
+}
+
+.social-share .facebook-- svg:hover circle {
+	fill: #3364a5
+}
+
+.social-share .twitter-- {
+	margin-right: 15px;
+	width: 40px;
+	height: 40px
+}
+
+.social-share .twitter-- svg path {
+	-webkit-transition: all linear .2s;
+	transition: all linear .2s;
+	cursor: pointer
+}
+
+.social-share .twitter-- svg:hover path {
+	fill: #5ba8e0
+}
+
+.social-share input.share__url {
+	padding: 7px 10px;
+	width: 60%;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	color: #999;
+	-webkit-transition: all linear .2s;
+	transition: all linear .2s;
+	outline: none
+}
+
+.social-share input.share__url::-ms-clear {
+	display: none
+}
+
+.social-share input.share__url:hover {
+	border: 1px solid #999;
+	color: #666
+}
+
+.social-share img {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px
+}
+
+.social-share .pull--right {
+	float: right;
+	margin-bottom: 10px
+}
+
+.threesixty {
+	cursor: -webkit-grab;
+	cursor: grab
+}
+
+.threesixty--grabbing {
+	cursor: -webkit-grabbing;
+	cursor: grabbing
+}
+
+.rotate-controls {
+	background-image: url(../images/controls-bg.png);
+	width: 100%;
+	height: 83px;
+	background-size: 100%;
+	position: absolute;
+	bottom: -24px
+}
+
+.rotate-controls a {
+	display: block;
+	position: absolute;
+	bottom: -4px;
+	width: 20px;
+	height: 20px;
+	background-size: 49px;
+	text-indent: -9999px;
+	background-image: url(../images/controls-arrows.png)
+}
+
+.rotate-controls__left {
+	left: 38%
+}
+
+.rotate-controls__right {
+	right: 38%;
+	background-position: 100%
+}
+
+.ncbg .photography {
+	text-align: left;
+	background-color: #fafafa;
+	padding: 20px 0
+}
+
+.ncbg .photography .btn {
+	display: inline-block
+}
+
+.ncbg .photography .btn--block {
+	display: none
+}
+
+.ncbg .photography .copy {
+	padding: 100px 0 0
+}
+
+.ncbg .panel h2 {
+	margin: 40px 0;
+	line-height: 30px;
+	font-size: 21px
+}
+
+.ncbg .panel h2,
+.ncbg .panel h3 {
+	letter-spacing: 8px
+}
+
+.ncbg .panel p {
+	margin-bottom: 24px;
+	line-height: 24px
+}
+
+.ncbg .hero {
+	position: relative;
+	background-image: url(../images/header-background.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-height: 200px
+}
+
+.ncbg .hero .btn--buy-fixed {
+	display: block;
+	margin-top: 0;
+	position: fixed;
+	right: 40px;
+	top: 107px;
+	z-index: 3
+}
+
+.ncbg .hero__copy {
+	position: absolute;
+	top: 40px;
+	left: 100px
+}
+
+.ncbg .hero__copy h1 {
+	letter-spacing: 10px;
+	margin-bottom: 0;
+	font-size: 40px
+}
+
+.ncbg .hero__copy h2 {
+	margin: 5px 0;
+	letter-spacing: 6px;
+	font-size: 20px
+}
+
+.ncbg .hero__copy h3 {
+	margin-top: 70px;
+	font-size: 22px
+}
+
+.ncbg .hero__copy .leica__text {
+	letter-spacing: 1px
+}
+
+.ncbg .hero__img {
+	visibility: hidden
+}
+
+.ncbg .hero-feature {
+	margin: 80px auto
+}
+
+.ncbg .hero-feature .logo__leica {
+	max-width: 65%;
+	margin: 80px 0 32px 10px;
+	display: block
+}
+
+.ncbg .hero-feature .threesixty {
+	position: relative;
+	width: 500px;
+	margin-left: -40px
+}
+
+.ncbg .hero-feature .threesixty__substitute {
+	margin-left: -40px;
+	background-image: url(../images/hero-feature-01@2x.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50%
+}
+
+.ncbg .hero-feature .threesixty__sequence,
+.ncbg .hero-feature .threesixty__substitute {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	z-index: 2
+}
+
+.ncbg .hero-feature .threesixty__sequence img {
+	pointer-events: none
+}
+
+.ncbg .hero-feature .threesixty__sequence__loader {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%)
+}
+
+.ncbg .hero-feature .threesixty .rotate-controls {
+	z-index: 1
+}
+
+.ncbg .hero-feature .col-5 h2 {
+	margin: 32px 10px 26px;
+	line-height: 31px
+}
+
+.ncbg .hero-feature .col-5 p {
+	margin-left: 10px;
+	line-height: 24px
+}
+
+.ncbg .hero-video {
+	padding: 20px
+}
+
+.ncbg .hero-video__share {
+	float: right;
+	letter-spacing: 1px;
+	margin-top: 10px
+}
+
+.ncbg .hero-video:after {
+	content: "";
+	display: block;
+	clear: both
+}
+
+.ncbg .video-section {
+	position: relative;
+	height: auto;
+	display: none;
+	text-align: center;
+	-webkit-transition: all linear .8s;
+	transition: all linear .8s
+}
+
+.ncbg .video-section.open-- {
+	display: block
+}
+
+.ncbg .video-section .video__cell {
+	position: relative;
+	text-align: center;
+	max-width: 100%
+}
+
+.ncbg .video-section video {
+	max-width: 100%;
+	max-height: 100%
+}
+
+.ncbg .video-section .video--play__btn {
+	left: 47%;
+	top: 38%;
+	display: block;
+	background: #000;
+	opacity: .6;
+	border-radius: 108px;
+	width: 11%;
+	height: 20%;
+	position: absolute;
+	cursor: pointer;
+	-webkit-transition: opacity linear .2s;
+	transition: opacity linear .2s
+}
+
+.firefox .ncbg .video-section .video--play__btn,
+.mobile .ncbg .video-section .video--play__btn {
+	display: none
+}
+
+.ncbg .video-section .video--play__btn:hover {
+	opacity: 1
+}
+
+.ncbg .specs {
+	font-size: .8em;
+	word-wrap: break-word
+}
+
+.ncbg .specs__heading {
+	font-size: 12px;
+	letter-spacing: 3px;
+	font-weight: 700;
+	margin: 0 0 10px;
+	padding: 20px 0;
+	text-align: center;
+	display: inline-block
+}
+
+.ncbg .specs__heading:before {
+	content: 'x';
+	display: inline-block;
+	margin-right: 6px
+}
+
+.ncbg .specs__heading:hover {
+	color: #ef2f34
+}
+
+.ncbg .specs .container-wide {
+	background-color: #fdfdfd;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#fff));
+	background-image: -webkit-linear-gradient(top, #fafafa, #fff);
+	background-image: -o-linear-gradient(top, #fafafa, #fff);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FAFAFA', EndColorStr='#FFFFFF')"
+}
+
+.ncbg .specs .collapsible {
+	text-align: center
+}
+
+.ncbg .specs .container-wide {
+	text-align: left
+}
+
+.ncbg .specs .collapsible--collapsed .specs__heading:before {
+	content: '+'
+}
+
+.ncbg .specs .collapsible--collapsed .specs__heading span {
+	display: none
+}
+
+.ncbg .specs .sku-btns {
+	text-align: center
+}
+
+.ncbg .specs .sku-btns .sku-btn.selected {
+	background-color: #000;
+	border: 1px solid #000;
+	color: #fff
+}
+
+.ncbg .specs--cn .btn {
+	font-size: 12px
+}
+
+.ncbg .specs--cn .sku-btns {
+	padding: 20px
+}
+
+.ncbg .specs--cn dl .row div {
+	display: none
+}
+
+.ncbg .collapsible--collapsed .collapsible__header__more,
+.ncbg .specs--cn dl.EVA-AL00 div.EVA-AL00,
+.ncbg .specs--cn dl.EVA-AL10 div.EVA-AL10,
+.ncbg .specs--cn dl.EVA-CL00 div.EVA-CL00,
+.ncbg .specs--cn dl.EVA-DL00 div.EVA-DL00,
+.ncbg .specs--cn dl.EVA-TL00 div.EVA-TL00 {
+	display: inline-block
+}
+
+.ncbg .collapsible--collapsed .collapsible__header__less {
+	display: none
+}
+
+.ncbg .collapsible--collapsed .btn--more:before {
+	content: '+'!important;
+	width: 28px
+}
+
+.ncbg .collapsible__header__more {
+	display: none
+}
+
+.ncbg .collapsible__header__less {
+	display: inline-block
+}
+
+.ncbg .collapsible .btn--more:before {
+	content: '-';
+	width: 28px
+}
+
+.ncbg .feature-1 {
+	position: relative;
+	height: 570px;
+	background-color: #fafafa
+}
+
+.ncbg .feature-1 .bg {
+	background-image: url(../images/feature-01@2x.png);
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 570px
+}
+
+.ncbg .feature-1 .copy {
+	margin-top: 140px
+}
+
+.ncbg .feature-1 h2 {
+	margin: 0 0 30px
+}
+
+.ncbg .feature-2 {
+	background-color: #f5f5f5;
+	background-image: url(../images/feature-02@2x.png);
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	padding-bottom: 50px
+}
+
+.ncbg .feature-2 h2 {
+	margin: 80px 0 28px
+}
+
+.ncbg .feature-2 p {
+	margin-bottom: 24px;
+	margin-right: 20px
+}
+
+.ncbg .feature-3 {
+	padding-bottom: 62px;
+	background-color: #ececec
+}
+
+.ncbg .feature-3 .bg {
+	margin: 64px 0 0 10%;
+	height: 608px;
+	padding-right: 0;
+	background-image: url(../images/feature-03@2x.png);
+	background-repeat: no-repeat;
+	background-size: 95%
+}
+
+.ncbg .feature-3 .copy {
+	margin: 104px 0 0 64px
+}
+
+.ncbg .feature-3 .copy h2 {
+	margin-bottom: 30px
+}
+
+.ncbg .feature-3 .copy p {
+	margin-bottom: 24px
+}
+
+.ncbg .feature-4 {
+	background-color: #f9f9f9
+}
+
+.ncbg .feature-4 .copy {
+	margin-top: 80px;
+	padding-bottom: 62px
+}
+
+.ncbg .feature-4 .copy h2 {
+	margin-bottom: 30px;
+	margin-right: -33px
+}
+
+.ncbg .feature-4 .copy p {
+	margin-bottom: 12px
+}
+
+.ncbg .feature-4 .bg {
+	margin: 118px 0 0 62px;
+	height: 608px;
+	padding-right: 0;
+	background-image: url(../images/feature-04@2x.png);
+	background-repeat: no-repeat;
+	background-size: 100%
+}
+
+.ncbg .feature-5 {
+	background-color: #ececec
+}
+
+.ncbg .feature-5 .bg {
+	height: 487px;
+	padding-right: 0;
+	background-image: url(../images/feature-05@2x.png);
+	background-repeat: no-repeat;
+	background-size: 119%;
+	margin-top: 53px;
+	background-position: -31px top
+}
+
+.ncbg .feature-5 .copy {
+	padding-left: 10px;
+	margin-top: 152px
+}
+
+.ncbg .feature-5 .copy h2 {
+	margin-bottom: 30px
+}
+
+.ncbg .feature-6 {
+	background-color: #f5f5f5;
+	padding-bottom: 162px
+}
+
+.ncbg .feature-6 .copy {
+	margin: 133px 0 0 80px;
+	padding-left: 18px
+}
+
+.ncbg .feature-6 .copy h2 {
+	margin-bottom: 28px
+}
+
+.ncbg .feature-6 .video__cell {
+	margin: 177px 28px 0;
+	width: auto
+}
+
+.ncbg .feature-6 video {
+	width: 100%
+}
+
+.ncbg .feature-7 {
+	background-color: #fafafa;
+	padding: 86px 0 30px
+}
+
+.ncbg .feature-7 .copy h2 {
+	margin-bottom: 26px
+}
+
+.ncbg .feature-7 .copy p {
+	width: 80%;
+	margin: 0 auto
+}
+
+.ncbg .feature-7 .bg {
+	background-image: url(../images/feature-07@2x.png);
+	height: 315px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 60px auto 0;
+	float: none;
+	width: 67%
+}
+
+.ncbg .highlights {
+	padding: 128px 0 100px
+}
+
+.ncbg .highlights .col-3 {
+	padding: 160px 0 0;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: top;
+	text-align: center
+}
+
+.ncbg .highlights .col-3 h3 {
+	margin: 38px 0 7px;
+	line-height: 26px;
+	height: 86px;
+	font-size: 16px
+}
+
+.ncbg .highlights .col-3 p {
+	width: 80%;
+	margin: 0 auto
+}
+
+.ncbg .highlights .col-3.battery {
+	background-image: url(../images/logo-battery.png)
+}
+
+.ncbg .highlights .col-3.antena {
+	background-image: url(../images/logo-antena.png)
+}
+
+.ncbg .highlights .col-3.wifi {
+	background-image: url(../images/logo-wifi.png)
+}
+
+.ncbg .highlights .col-3.finger {
+	background-image: url(../images/logo-finger.png)
+}
+
+.ncbg .vip-panel {
+	padding: 44px 0 26px;
+	text-align: center
+}
+
+.ncbg .vip-panel .container {
+	padding: 20px
+}
+
+.ncbg .vip-panel .vip-logo {
+	width: 160px
+}
+
+.ncbg .vip-panel__tabs .col-4 {
+	padding: 69px 0 0;
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position: top;
+	text-align: center
+}
+
+.ncbg .vip-panel__tabs .col-4 h3 {
+	margin: 38px 0 7px;
+	line-height: 26px;
+	font-size: 16px
+}
+
+.ncbg .vip-panel__tabs .col-4 p {
+	width: 90%;
+	margin: 18px auto 0
+}
+
+.ncbg .vip-panel__tabs .col-4.warranty {
+	background-image: url(../images/logo-vip-warranty.svg)
+}
+
+.ncbg .vip-panel__tabs .col-4.warranty p {
+	margin-top: 42px
+}
+
+.ncbg .vip-panel__tabs .col-4.screen {
+	background-image: url(../images/logo-vip-screen.svg)
+}
+
+.ncbg .vip-panel__tabs .col-4.replacement {
+	background-image: url(../images/logo-vip-replacement.svg)
+}
+
+.ncbg .vip-panel__more {
+	margin-top: 34px;
+	border-top: 1px solid #ccc;
+	padding-top: 32px;
+	text-align: center
+}
+
+.ncbg .vip-panel__more a {
+	padding: 14px 23px
+}
+
+.ncbg .buy-panel {
+	background-color: #fff;
+	padding-bottom: 80px
+}
+
+.ncbg .buy-panel__content {
+	padding-top: 44px;
+	padding-bottom: 8px
+}
+
+.ncbg .buy-panel__image {
+	margin-left: 15%
+}
+
+.ncbg .buy-panel__image>div {
+	position: relative;
+	width: 90%;
+	display: inline-block
+}
+
+.ncbg .buy-panel__image>div img {
+	width: 100%;
+	background-color: #fff
+}
+
+.ncbg .buy-panel__image>div img.top {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.ncbg .buy-panel__right-content {
+	margin: 44px 0 0 -51px
+}
+
+.ncbg .buy-panel__right-content .color-chooser {
+	margin: 105px 0 0 2px
+}
+
+.ncbg .buy-panel__model {
+	font-size: 28px;
+	margin-top: 40px;
+	margin-bottom: 0;
+	letter-spacing: 11px
+}
+
+.ncbg .buy-panel__buy-button {
+	margin-top: 0;
+	margin: 8px 0 0;
+	padding: 14px 17px
+}
+
+.ncbg .buy-panel__share-button {
+	padding: 14px 17px
+}
+
+.ncbg .buy-panel__plans {
+	border-top: 1px solid #ccc;
+	padding-top: 80px
+}
+
+.ncbg .buy-panel__plans .btn {
+	display: block
+}
+
+.ncbg .buy-panel__plans__heading {
+	text-align: center;
+	letter-spacing: 10px;
+	font-size: 29px
+}
+
+.ncbg .buy-panel__plans__list {
+	margin-top: 47px;
+	text-align: center;
+	overflow: hidden
+}
+
+.ncbg .buy-panel__plans__list li {
+	display: inline-block;
+	margin-right: 86px;
+	width: 17%
+}
+
+.ncbg .buy-panel__plans__list li a {
+	padding: 15px 10px
+}
+
+.ncbg .buy-panel__plans__list li:last-child {
+	margin-right: 0
+}
+
+.ncbg .buy-panel__plans__list img {
+	height: 50px
+}
+
+.ncbg .tweak__1080 {
+	display: none
+}
+
+.notouch .specs__heading:hover {
+	color: #ef2f34
+}
+
+@media (max-width:767px) and (min-width:1280px) {
+	.ncbg .panel h2 {
+		line-height: 44.8px
+	}
+	.ncbg .panel p {
+		line-height: 33.6px
+	}
+	.ncbg .hero h1 {
+		font-size: 30.8px
+	}
+	.ncbg .hero__copy h1 {
+		font-size: 39.2px;
+		line-height: 61.6px
+	}
+	.ncbg .hero__copy h2 {
+		line-height: 30.8px;
+		font-size: 19.6px
+	}
+	.ncbg .hero__copy h3 {
+		line-height: 30.8px;
+		font-size: 22.4px
+	}
+}
+
+@media (min-width:768px) {
+	.social-share input.share__url {
+		width: 20%
+	}
+	.social-share input.share__url__wide {
+		width: 200px
+	}
+}
+
+@media (min-width:768px) and (max-width:992px) {
+	.ncbg .hero__copy h3 {
+		max-width: 275px
+	}
+}
+
+@media (min-width:992px) {
+	.ncbg .hero__copy h3 {
+		max-width: 385px
+	}
+}
+
+@media (min-width:1280px) {
+	.share-sub__block {
+		margin-bottom: 20px;
+		font-size: 16px
+	}
+	.ncbg .panel h2 {
+		line-height: 42px;
+		font-size: 2.0em
+	}
+	.ncbg .panel p {
+		line-height: 33.6px
+	}
+	.ncbg .hero__copy h1 {
+		font-size: 56px
+	}
+	.ncbg .hero__copy h2 {
+		font-size: 28px
+	}
+	.ncbg .hero__copy h3 {
+		font-size: 30.8px;
+		max-width: 520px
+	}
+	.ncbg .hero-feature .col-5 h2 {
+		line-height: 43.4px
+	}
+	.ncbg .hero-feature .col-5 p {
+		line-height: 33.6px
+	}
+	.ncbg .specs__heading {
+		font-size: 16.8px;
+		letter-spacing: 4.2px
+	}
+	.ncbg .highlights .col-3 h3,
+	.ncbg .vip-panel__tabs .col-4 h3 {
+		font-size: 22.4px
+	}
+	.ncbg .buy-panel__model {
+		font-size: 39.2px
+	}
+	.ncbg .buy-panel__plans__heading {
+		font-size: 40.6px
+	}
+}
+
+@media (max-width:1080px) {
+	.ncbg .tweak__1080 {
+		display: block
+	}
+}
+
+@media (max-width:767px) {
+	.ncbg .photography .btn {
+		margin-bottom: 50px
+	}
+	.ncbg .photography .copy {
+		padding: 0
+	}
+	.ncbg .hero__copy h3 {
+		margin-top: 20px
+	}
+	.ncbg .hero-feature .logo__leica {
+		margin: 30px 0 30px 10px
+	}
+	.ncbg .hero-feature .threesixty__substitute {
+		width: 100%;
+		margin-left: 0;
+		height: 400px
+	}
+	.ncbg .specs {
+		border-bottom: 1px solid #ccc;
+		border-top: 1px solid #ccc
+	}
+	.ncbg .specs__heading {
+		margin: 0
+	}
+	.ncbg .feature-2 p {
+		margin-right: 0
+	}
+	.ncbg .specs__heading {
+		display: block;
+		color: #ef2f34
+	}
+	.ncbg .collapsible--collapsed .specs__heading {
+		color: #000
+	}
+	.ncbg .panel h2 {
+		margin: 20px 0;
+		line-height: 32px
+	}
+	.ncbg .panel p {
+		margin-bottom: 24px;
+		line-height: 24px
+	}
+	.ncbg .hero {
+		position: relative;
+		background-image: url(../images/header-background-mobile.jpg);
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 700px
+	}
+	.ncbg .hero h1 {
+		font-size: 22px
+	}
+	.ncbg .hero .btn--buy-fixed {
+		right: 0;
+		top: 0;
+		padding: 10px;
+		position: absolute
+	}
+	.ncbg .hero .container {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0
+	}
+	.ncbg .hero__copy {
+		width: 100%;
+		top: 50px;
+		left: 0;
+		text-align: center
+	}
+	.ncbg .hero__copy .col-5 {
+		margin: 0
+	}
+	.ncbg .hero__copy h1 {
+		font-size: 28px;
+		line-height: 44px
+	}
+	.ncbg .hero__copy h2 {
+		line-height: 22px;
+		font-size: 14px
+	}
+	.ncbg .hero__copy h3 {
+		margin-top: 22px;
+		line-height: 22px;
+		font-size: 16px
+	}
+	.ncbg .hero__img {
+		min-height: 520px
+	}
+	.ncbg .hero-feature {
+		position: relative;
+		margin: 0
+	}
+	.ncbg .hero-feature .logo {
+		width: 275px;
+		display: block
+	}
+	.ncbg .hero-feature .threesixty {
+		width: 250px;
+		height: 300px;
+		margin: 0 auto 40px
+	}
+	.ncbg .hero-feature .threesixty__sequence {
+		position: relative;
+		width: 250px;
+		height: 250px
+	}
+	.ncbg .hero-feature .threesixty__sequence__loader {
+		width: 20px;
+		height: 20px
+	}
+	.ncbg .hero-feature .threesixty .rotate-controls {
+		z-index: 1
+	}
+	.ncbg .feature-1 {
+		margin-top: 0;
+		height: auto
+	}
+	.ncbg .feature-1 .container {
+		padding: 0 20px 20px
+	}
+	.ncbg .feature-1 .bg {
+		background-size: 1 40px;
+		background-position: bottom;
+		background-image: url(../images/feature-01.png);
+		background-size: 280px;
+		height: 490px
+	}
+	.ncbg .feature-1 .copy {
+		margin-top: 40px
+	}
+	.ncbg .feature-2 {
+		padding-bottom: 210px;
+		background-size: 300px
+	}
+	.ncbg .feature-3 {
+		padding-bottom: 0
+	}
+	.ncbg .feature-3 .bg {
+		height: 500px;
+		margin: 0;
+		background-repeat: no-repeat;
+		background-size: 200px;
+		background-position: 50%;
+		background-image: url(../images/feature-03.png)
+	}
+	.ncbg .feature-3 .copy {
+		margin: 10px 0
+	}
+	.ncbg .feature-4 .copy {
+		margin-top: 20px
+	}
+	.ncbg .feature-4 .copy h2 {
+		margin-right: 0
+	}
+	.ncbg .feature-4 .bg {
+		margin: 24px 0 0;
+		height: 378px;
+		background-position: 50%;
+		background-size: 278px;
+		background-image: url(../images/feature-04.png)
+	}
+	.ncbg .feature-5 .container {
+		padding-bottom: 0
+	}
+	.ncbg .feature-5 .bg {
+		height: 283px;
+		padding-right: 0;
+		background-image: url(../images/feature-05.png);
+		background-size: 235px;
+		margin-top: 0;
+		background-position: center 34px
+	}
+	.ncbg .feature-6 {
+		padding-bottom: 0
+	}
+	.ncbg .feature-6 .video__cell {
+		margin: 20px
+	}
+	.ncbg .feature-7 {
+		padding-top: 0
+	}
+	.ncbg .feature-7 .bg {
+		background-image: url(../images/feature-07.png);
+		background-position: top;
+		height: 99px;
+		background-size: 280px;
+		margin: 60px auto 0;
+		float: none;
+		width: 100%;
+		margin: 40px 0 0
+	}
+	.ncbg .highlights {
+		padding: 20px 0
+	}
+	.ncbg .highlights .col-3 {
+		background-size: 100px;
+		padding: 90px 0 40px;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 40px
+	}
+	.ncbg .highlights .col-3:last-child {
+		border-bottom: none;
+		margin-bottom: 0
+	}
+	.ncbg .vip-panel h2 {
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+		border-bottom: 1px solid #ccc
+	}
+	.ncbg .vip-panel__tabs .col-4 {
+		background-size: 100px;
+		padding: 90px 0 40px;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 40px
+	}
+	.ncbg .vip-panel__tabs .col-4:last-child {
+		border-bottom: none;
+		margin-bottom: 0
+	}
+	.ncbg .buy-panel__image {
+		margin: 0
+	}
+	.ncbg .buy-panel__image img {
+		width: 220px
+	}
+	.ncbg .buy-panel__right-content {
+		margin: 0
+	}
+	.ncbg .buy-panel__right-content .color-chooser {
+		margin: 40px 0
+	}
+	.ncbg .buy-panel__buy-button {
+		margin-top: 40px
+	}
+	.ncbg .buy-panel__share-button {
+		margin: 10px 0 40px
+	}
+	.ncbg .buy-panel__plans {
+		border-top: none;
+		padding-top: 20px
+	}
+	.ncbg .buy-panel__plans__list {
+		margin-top: 0
+	}
+	.ncbg .buy-panel__plans__list li {
+		width: 49%;
+		margin: 34px 0 0
+	}
+}
+
+@media (max-width:700px) {
+	.ncbg .tweak.hero {
+		min-height: 670px
+	}
+}
+
+@media (max-width:540px) {
+	.ncbg .tweak.hero {
+		min-height: 600px
+	}
+}
+
+@media (max-width:400px) {
+	.ncbg .tweak.hero {
+		min-height: 530px
+	}
+}
+
+.m-reorder dd,
+.m-reorder dt {
+	line-height: 18px;
+	font-size: 15px;
+}
+
+#cbg-main-nav-wrapper #cbg-main-nav-search {
+	display: block;
+}
+
+@media (min-width: 1680px) {
+	.container-wide {
+		margin: 0 auto;
+		max-width: 100%;
+	}
+}
+
+#cbg-main-nav-wrapper {
+	position: absolute!important;
+}
+
+.gray-bgcolor,
+body {
+	overflow-x: hidden;
+}
+
+.ncbg .row .video--play__btn {
+	left: 47%;
+	top: 38%;
+	display: block;
+	background: #000;
+	opacity: .6;
+	border-radius: 108px;
+	width: 11%;
+	height: 20%;
+	position: absolute;
+	cursor: pointer;
+	-webkit-transition: opacity linear .2s;
+	transition: opacity linear .2s;
+}
+
+.ncbg .y-video-play {
+	display: block;
+	top: 100px;
+}
+
+.ncbg .hero .btn--buy-fixed {
+	position: absolute;
+	right: 40px;
+	top: 40px;
+}
+
+.ncbg .hero-feature .logo__leica {
+	float: none;
+}
+
+.ncbg .feature-6 .video__cell {
+	margin: 210px 0 0;
+}
+
+.ncbg .feature-6 .copy {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.color-intro {
+	clear: both;
+	padding-top: 20px;
+	font-size: 12px;
+}
+
+.color-intro p {
+	line-height: 26px;
+	font-size: 12px;
+}
+
+.m-reorder dd,
+.m-reorder .col-12 {
+	font-size: 16px;
+}
+
+.color-chooser__color--prestiege-gold span:after {
+	background-color: #e4dcd0;
+}
+
+p,
+div,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+section,
+dd {
+	font-family: "Microsoft YaHei";
+}
+
+.ncbg p {
+	font-size: 1.3em;
+}
+
+#section-12 .row .col-3 h3 {
+	font-size: 20px;
+}
+
+
+/* 04.27 zhw */
+
+.ncbg .hero__img {
+	width: 100%;
+	visibility: inherit;
+}
+
+.ncbg .hero {
+	background: none;
+}
+
+#section-18 .container {
+	max-width: 940px !important;
+	background: url(../images/feature-10@2x.png) right 65%/580px no-repeat;
+}
+
+.ncbg .feature-10 .bg {
+	background: none;
+}
+
+@media (min-width: 1900px) {
+	.ncbg .feature-2 {
+		background-size: 30%;
+	}
+	#section-6 .col-5 {
+		width: 83.3333333333%;
+	}
+}

@@ -1,0 +1,1452 @@
+.xm-product-box .hd {
+	background-color: #f5f5f5
+}
+
+.xm-product-box .hd .separator {
+	margin: 0 5px
+}
+
+.xm-product-box .ft {
+	border-top: 1px solid #e0e0e0
+}
+
+.xm-product-box .nav-bar {
+	margin-top: 15px;
+	position: relative;
+	height: 50px;
+	color: #616161
+}
+
+.xm-product-box .nav-bar .title {
+	float: left;
+	_display: inline;
+	margin: 10px 0 0 0
+}
+
+.xm-product-box .nav-bar .title h2 {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #424242
+}
+
+.xm-product-box .nav-bar .title small {
+	font-size: 12px
+}
+
+.xm-product-box .nav-bar .title .separator {
+	margin: 0 5px
+}
+
+.xm-product-box .nav-bar .nav {
+	float: right;
+	_display: inline;
+	margin: 10px 0 0 0
+}
+
+.xm-product-box .nav-bar .nav .nav-switch {
+	margin-right: 10px;
+	line-height: 30px
+}
+
+.xm-product-box .nav-switch .separator {
+	margin: 0 5px;
+	color: #eee
+}
+
+.xm-product-box .nav-switch .tab,
+.xm-product-box .nav-switch .link {
+	color: #616161
+}
+
+.xm-product-box .nav-switch .tab:hover,
+.xm-product-box .nav-switch .link:hover {
+	color: #ff6700
+}
+
+.xm-product-box .nav-switch .active,
+.xm-product-box .nav-switch .tab-active {
+	color: #ff6700;
+	cursor: default
+}
+
+.xm-product-box .nav-switch .active:hover,
+.xm-product-box .nav-switch .tab-active:hover {
+	color: #ff6700
+}
+
+.xm-product-box .separator {
+	font-family: sans-serif
+}
+
+.xm-product-box .btn-disable {
+	cursor: default
+}
+
+.xm-product-box .btn-disable:hover {
+	background: #616161
+}
+
+.xm-product-box .btn-disable:active {
+	background: #616161;
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+
+body:after {
+	content: url("//s1.mi.com/zt/2013/close.png?130801") url("//s1.mi.com/zt/2013/loading.gif") url("//s1.mi.com/zt/2013/prev.png?130801") url("//s1.mi.com/zt/2013/next.png?130801");
+	display: none
+}
+
+.lightboxOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background-color: black;
+	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
+	opacity: 0.8;
+	filter: alpha(opacity=80)\9;
+	display: none
+}
+
+.lightbox {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	text-align: center;
+	line-height: 0;
+	font-weight: normal
+}
+
+.lightbox .lb-image {
+	display: block;
+	height: auto;
+	border-radius: 3px
+}
+
+.lightbox a img {
+	border: none
+}
+
+.lb-outerContainer {
+	position: relative;
+	background-color: white;
+	*zoom: 1;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	border-radius: 4px
+}
+
+.lb-outerContainer:after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+.lb-container {
+	padding: 4px
+}
+
+.lb-loader {
+	position: absolute;
+	top: 43%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0
+}
+
+.lb-cancel {
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+	background: url("//s1.mi.com/zt/2013/loading.gif") no-repeat
+}
+
+.lb-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10
+}
+
+.lb-container>.nav {
+	left: 0
+}
+
+.lb-nav a {
+	outline: none
+}
+
+.lb-prev,
+.lb-next {
+	width: 49%;
+	height: 100%;
+	cursor: pointer;
+	display: block
+}
+
+.lb-prev {
+	left: 0;
+	float: left
+}
+
+.lb-prev:hover {
+	background: url("//s1.mi.com/zt/2013/prev.png?130801") left 48% no-repeat
+}
+
+.lb-next {
+	right: 0;
+	float: right
+}
+
+.lb-next:hover {
+	background: url("//s1.mi.com/zt/2013/next.png?130801") right 48% no-repeat
+}
+
+.lb-dataContainer {
+	margin: 0 auto;
+	padding-top: 5px;
+	*zoom: 1;
+	width: 100%;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px
+}
+
+.lb-dataContainer:after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+.lb-data {
+	padding: 0 4px;
+	color: #bbbbbb
+}
+
+.lb-data .lb-details {
+	width: 85%;
+	float: left;
+	text-align: left;
+	line-height: 1.1em
+}
+
+.lb-data .lb-caption {
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 1em
+}
+
+.lb-data .lb-number {
+	display: block;
+	clear: left;
+	padding-bottom: 1em;
+	font-size: 12px;
+	color: #999999
+}
+
+.lb-data .lb-close {
+	display: block;
+	float: right;
+	width: 30px;
+	height: 30px;
+	background: url("//s1.mi.com/zt/2013/close.png?130801") top right no-repeat;
+	text-align: right;
+	outline: none;
+	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+	opacity: 0.7;
+	filter: alpha(opacity=70)\9
+}
+
+.lb-data .lb-close:hover {
+	cursor: pointer;
+	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+	filter: alpha(opacity=100)\9
+}
+
+.block_hide {
+	display: none
+}
+
+.block_hide {
+	display: none
+}
+
+body {
+	margin: 0px;
+	padding: 0px
+}
+
+.ahz-head {
+	height: 50px;
+	margin-top: 15px;
+	background-color: #fff;
+	border-bottom: 1px solid #e6e4d3
+}
+
+.ahz-head .ahz-head-leftCon {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	_display: inline;
+	margin: 0px;
+	padding: 0px;
+	color: #434a54;
+	font-size: 18px;
+	font-weight: normal
+}
+
+.ahz-head .ahz-head-rightCon {
+	height: 50px;
+	line-height: 50px;
+	float: right;
+	font-weight: normal;
+	font-size: 14px;
+	color: #333
+}
+
+.ahz-head .ahz-head-rightCon span,
+.ahz-head .ahz-head-rightCon .tab {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	cursor: pointer;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #434a54
+}
+
+.ahz-head .ahz-head-rightCon a.bold {
+	color: #f84858;
+	cursor: default
+}
+
+.ahz-head .ahz-head-rightCon b {
+	font-weight: normal;
+	font-size: 13px;
+	color: #ccd1d9
+}
+
+.ahz-head .ahz-head-rightCon .f-chanel {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	cursor: pointer;
+	padding-left: 5px;
+	padding-right: 15px;
+	color: #434a54
+}
+
+.ahz-head .ahz-head-rightCon .f-chanels {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	cursor: pointer;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #434a54
+}
+
+.ahz-head .ahz-head-rightCon .btn {
+	margin-left: 5px
+}
+
+.ahz-head .ahz-head-rightCon span.btn {
+	color: #fff;
+	cursor: default
+}
+
+.ahz-head .ahz-head-rightCon span.btn:hover {
+	background: #ccd0d8
+}
+
+.ahz-head .ahz-head-rightCon span.btn:active {
+	background: #ccd0d8;
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+
+.ahz-content-miui {
+	overflow: hidden;
+	_zoom: 1
+}
+
+.ahz-content-miui .ahz-content-miui-head {
+	background: #fff;
+	text-align: center
+}
+
+.ahz-content-miui .ahz-content-miui-con {
+	background: #fff;
+	overflow: hidden;
+	_zoom: 1;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA {
+	height: 809px;
+	border-bottom: 1px solid #d9d9d9;
+	position: relative;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .head {
+	margin-top: 40px;
+	margin-left: 40px;
+	overflow: hidden;
+	_zoom: 1;
+	height: 105px;
+	z-index: 2;
+	font-size: 24px;
+	color: #000
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .head .img {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	width: 102px;
+	height: 104px;
+	vertical-align: middle;
+	background: url("//s1.mi.com/images/130402/miui/miui-icons.jpg") no-repeat;
+	background-position: 0 "0px"
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .head .text {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	line-height: 24px;
+	margin-left: 20px;
+	font-weight: bold
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .head .text h1 {
+	font-size: 24px;
+	color: #000;
+	margin: 0px;
+	padding: 0px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .head .text b {
+	font-size: 18px;
+	color: #7b7b7b;
+	font-weight: normal
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .content {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	position: relative
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .content .con1 p {
+	position: absolute;
+	width: 250px;
+	top: 170px;
+	right: 50px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .content .con1 img {
+	position: absolute;
+	top: 20px;
+	left: 0px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .content .con2 p {
+	position: absolute;
+	width: 310px;
+	top: 170px;
+	left: 100px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .content .con2 img {
+	position: absolute;
+	top: 20px;
+	right: 100px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .foots {
+	text-align: center;
+	width: 512px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	margin: 0 auto;
+	padding: 0px;
+	margin-top: 550px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .foots li {
+	float: left;
+	width: 256px;
+	line-height: 42px;
+	height: 42px;
+	text-align: center;
+	cursor: pointer
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conA .foots .current {
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	background: #eee;
+	cursor: default
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB {
+	height: 919px;
+	position: relative;
+	overflow: hidden;
+	_zoom: 1;
+	border-bottom: 1px solid #d9d9d9
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .head {
+	margin-top: 40px;
+	margin-left: 40px;
+	overflow: hidden;
+	_zoom: 1;
+	height: 105px;
+	z-index: 2;
+	font-size: 24px;
+	color: #000
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .head .img {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	width: 102px;
+	height: 104px;
+	vertical-align: middle;
+	background: url("//s1.mi.com/images/130402/miui/miui-icons.jpg") no-repeat;
+	background-position: 0 -739px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .head .text {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	line-height: 24px;
+	margin-left: 20px;
+	font-weight: bold
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .head .text h1 {
+	font-size: 24px;
+	color: #000;
+	margin: 0px;
+	padding: 0px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .head .text b {
+	font-size: 18px;
+	color: #7b7b7b;
+	font-weight: normal
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .content {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .content .tab1 {
+	position: relative
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .content .tab1 img {
+	position: absolute;
+	top: 40px;
+	right: 100px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .content .tab1 .text {
+	position: absolute;
+	left: 90px;
+	top: 100px;
+	width: 260px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .content .tab1 .text h2 {
+	line-height: 50px;
+	padding: 0px;
+	margin: 0px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .content .tab2 {
+	position: relative
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .content .tab2 img {
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	left: 300px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .content .tab2 .text {
+	position: absolute;
+	z-index: 2;
+	top: 500px;
+	left: 200px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .content .tab2 .text h2 {
+	text-align: center;
+	line-height: 50px;
+	padding: 0px;
+	margin: 0px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .foots {
+	text-align: center;
+	border-radius: 2px;
+	margin: 0 auto;
+	padding: 0px;
+	margin-top: 600px;
+	width: 880px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .foots li {
+	float: left;
+	width: 107px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #ddd;
+	height: 107px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .foots li span {
+	background: url(//s1.mi.com/images/130402/miui/miui-sys-icon.png) no-repeat;
+	width: 53px;
+	height: 53px;
+	margin: 15px auto 10px;
+	display: block
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .foots li .icon1 {
+	background-position: 0 0px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .foots li .icon2 {
+	background-position: 0 -53px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .foots li .icon3 {
+	background-position: 0 -106px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .foots li .icon4 {
+	background-position: 0 -159px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .foots li .icon5 {
+	background-position: 0 -212px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .foots li .icon6 {
+	background-position: 0 -265px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .foots li .icon7 {
+	background-position: 0 -318px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .foots li .icon8 {
+	background-position: 0 -371px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conB .foots .current {
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	background: #eee;
+	cursor: default
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conC {
+	height: 701px;
+	position: relative;
+	overflow: hidden;
+	_zoom: 1;
+	border-bottom: 1px solid #d9d9d9
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conC .head {
+	margin-top: 40px;
+	margin-left: 40px;
+	overflow: hidden;
+	_zoom: 1;
+	height: 105px;
+	z-index: 2;
+	font-size: 24px;
+	color: #000
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conC .head .img {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	width: 102px;
+	height: 104px;
+	vertical-align: middle;
+	background: url("//s1.mi.com/images/130402/miui/miui-icons.jpg") no-repeat;
+	background-position: 0 -105px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conC .head .text {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	line-height: 24px;
+	margin-left: 20px;
+	font-weight: bold
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conC .head .text h1 {
+	font-size: 24px;
+	color: #000;
+	margin: 0px;
+	padding: 0px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conC .head .text b {
+	font-size: 18px;
+	color: #7b7b7b;
+	font-weight: normal
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conC p {
+	position: absolute;
+	width: 393px;
+	top: 230px;
+	right: 50px;
+	z-index: 3
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conC img {
+	position: absolute;
+	left: 43px;
+	top: 170px;
+	z-index: 2
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD {
+	height: 869px;
+	position: relative;
+	overflow: hidden;
+	_zoom: 1;
+	border-bottom: 1px solid #d9d9d9
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD .head {
+	margin-top: 40px;
+	margin-left: 40px;
+	overflow: hidden;
+	_zoom: 1;
+	height: 105px;
+	z-index: 2;
+	font-size: 24px;
+	color: #000
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD .head .img {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	width: 102px;
+	height: 104px;
+	vertical-align: middle;
+	background: url("//s1.mi.com/images/130402/miui/miui-icons.jpg") no-repeat;
+	background-position: 0 -210px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD .head .text {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	line-height: 24px;
+	margin-left: 20px;
+	font-weight: bold
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD .head .text h1 {
+	font-size: 24px;
+	color: #000;
+	margin: 0px;
+	padding: 0px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD .head .text b {
+	font-size: 18px;
+	color: #7b7b7b;
+	font-weight: normal
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD .content {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	width: 850px;
+	margin: 0 auto
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD .content .tab1 {
+	text-align: center
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD .content .tab1 .text h2 {
+	color: #333;
+	font-size: 18px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD .content .tab1 .text p {
+	font-size: 14px;
+	color: #555;
+	line-height: 24px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD .foots {
+	text-align: center;
+	border-radius: 2px;
+	margin: 0 auto;
+	padding: 0px;
+	margin-top: 50px;
+	width: 771px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD .foots li {
+	float: left;
+	width: 254px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #ddd;
+	height: 40px;
+	line-height: 40px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conD .foots .current {
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	background: #eee;
+	cursor: default
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conE {
+	height: 641px;
+	position: relative;
+	overflow: hidden;
+	_zoom: 1;
+	border-bottom: 1px solid #d9d9d9
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conE .head {
+	margin-top: 40px;
+	margin-left: 40px;
+	overflow: hidden;
+	_zoom: 1;
+	height: 105px;
+	z-index: 2;
+	font-size: 24px;
+	color: #000
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conE .head .img {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	width: 102px;
+	height: 104px;
+	vertical-align: middle;
+	background: url("//s1.mi.com/images/130402/miui/miui-icons.jpg") no-repeat;
+	background-position: 0 -315px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conE .head .text {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	line-height: 24px;
+	margin-left: 20px;
+	font-weight: bold
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conE .head .text h1 {
+	font-size: 24px;
+	color: #000;
+	margin: 0px;
+	padding: 0px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conE .head .text b {
+	font-size: 18px;
+	color: #7b7b7b;
+	font-weight: normal
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conE .content {
+	position: relative
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conE .content img {
+	position: absolute;
+	top: 28px;
+	left: 72px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conE .content p {
+	position: absolute;
+	z-index: 3;
+	width: 305px;
+	top: 50px;
+	right: 50px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conF {
+	height: 646px;
+	position: relative;
+	overflow: hidden;
+	_zoom: 1;
+	border-bottom: 1px solid #d9d9d9
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conF .head {
+	margin-top: 40px;
+	margin-left: 40px;
+	overflow: hidden;
+	_zoom: 1;
+	height: 105px;
+	z-index: 2;
+	font-size: 24px;
+	color: #000
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conF .head .img {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	width: 102px;
+	height: 104px;
+	vertical-align: middle;
+	background: url("//s1.mi.com/images/130402/miui/miui-icons.jpg") no-repeat;
+	background-position: 0 -416px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conF .head .text {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	line-height: 24px;
+	margin-left: 20px;
+	font-weight: bold
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conF .head .text h1 {
+	font-size: 24px;
+	color: #000;
+	margin: 0px;
+	padding: 0px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conF .head .text b {
+	font-size: 18px;
+	color: #7b7b7b;
+	font-weight: normal
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conF .content {
+	position: relative;
+	text-align: center
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conG {
+	height: 691px;
+	position: relative;
+	overflow: hidden;
+	_zoom: 1;
+	border-bottom: 1px solid #d9d9d9
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conG .head {
+	margin-top: 40px;
+	margin-left: 40px;
+	overflow: hidden;
+	_zoom: 1;
+	height: 105px;
+	z-index: 2;
+	font-size: 24px;
+	color: #000
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conG .head .img {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	width: 102px;
+	height: 104px;
+	vertical-align: middle;
+	background: url("//s1.mi.com/images/130402/miui/miui-icons.jpg") no-repeat;
+	background-position: 0 -531px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conG .head .text {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	line-height: 24px;
+	margin-left: 20px;
+	font-weight: bold
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conG .head .text h1 {
+	font-size: 24px;
+	color: #000;
+	margin: 0px;
+	padding: 0px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conG .head .text b {
+	font-size: 18px;
+	color: #7b7b7b;
+	font-weight: normal
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conG .content {
+	position: relative
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conG .content img {
+	position: absolute;
+	top: 0px;
+	right: 100px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conG .content p {
+	position: absolute;
+	z-index: 3;
+	width: 266px;
+	top: 160px;
+	left: 85px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conH {
+	position: relative;
+	overflow: hidden;
+	_zoom: 1;
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom: 50px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conH .head {
+	margin-top: 40px;
+	margin-left: 40px;
+	overflow: hidden;
+	_zoom: 1;
+	height: 105px;
+	z-index: 2;
+	font-size: 24px;
+	color: #000
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conH .head .img {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	width: 102px;
+	height: 104px;
+	vertical-align: middle;
+	background: url("//s1.mi.com/images/130402/miui/miui-icons.jpg") no-repeat;
+	background-position: 0 -635px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conH .head .text {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	line-height: 24px;
+	margin-left: 20px;
+	font-weight: bold
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conH .head .text h1 {
+	font-size: 24px;
+	color: #000;
+	margin: 0px;
+	padding: 0px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conH .head .text b {
+	font-size: 18px;
+	color: #7b7b7b;
+	font-weight: normal
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conH .content {
+	position: relative;
+	list-style-type: none;
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 50px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conH .content li {
+	margin-left: 10px;
+	float: left;
+	width: 250px;
+	text-align: center
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conH .content li h1 {
+	text-align: center;
+	font-size: 18px
+}
+
+.ahz-content-miui .ahz-content-miui-con .ahz-content-miui-conH .content li p {
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center
+}
+
+.ahz-content-gallary {
+	border-top: none;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+	_zoom: 1;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px
+}
+
+.ahz-content-gallary .ahz-img-left {
+	float: left;
+	width: 800px
+}
+
+.ahz-content-gallary .ahz-img-right {
+	width: 116px;
+	float: right;
+	margin-right: 10px;
+	min-height: 615px
+}
+
+.ahz-content-gallary .ahz-img-right .pifu {
+	overflow: hidden;
+	_zoom: 1;
+	margin-top: 35px
+}
+
+.ahz-content-gallary .ahz-img-right .pifu ul {
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none
+}
+
+.ahz-content-gallary .ahz-img-right .pifu ul li {
+	width: 114px;
+	height: 80px;
+	border: 1px solid #e1e1e1;
+	margin-bottom: 10px;
+	cursor: pointer
+}
+
+.ahz-content-gallary .ahz-img-right .pifu ul .on {
+	border: 1px solid #f60
+}
+
+.ahz-content-gallary .ahz-img-right .ahz-imgup {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	display: block;
+	width: 118px;
+	cursor: pointer;
+	height: 35px;
+	margin-top: 0px;
+	text-indent: -9999px;
+	background-image: url("//s1.mi.com/images/new816/s1_imgup.png");
+	background-repeat: no-repeat;
+	background-color: #fff
+}
+
+.ahz-content-gallary .ahz-img-right .ahz-imgdown {
+	display: block;
+	position: absolute;
+	top: 580px;
+	right: 10px;
+	width: 118px;
+	height: 35px;
+	cursor: pointer;
+	text-indent: -9999px;
+	background-image: url("//s1.mi.com/images/new816/s1_imgdown.png");
+	background-repeat: no-repeat;
+	background-color: #fff
+}
+
+.ahz-content-params {
+	background-color: #fff;
+	overflow: hidden;
+	_zoom: 1;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px
+}
+
+.ahz-content-params .form {
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 1px solid #e6e4e3
+}
+
+.ahz-content-params .form dt {
+	float: left;
+	width: 144px;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+	border-top: 1px solid #e6e4e3;
+	padding-top: 20px;
+	color: #333;
+	padding-left: 20px
+}
+
+.ahz-content-params .form dd {
+	width: 1030px;
+	float: left;
+	border-top: 1px solid #e6e4e3;
+	border-left: 1px solid #e6e4e3;
+	padding-top: 20px;
+	padding-left: 30px;
+	margin-left: 0px;
+	padding-bottom: 20px
+}
+
+.ahz-content-params .form dd ul {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	list-style-type: none
+}
+
+.ahz-content-params .form dd ul li {
+	line-height: 24px;
+	height: 24px
+}
+
+.ahz-content-params .form dd ul li b {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	width: 200px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px
+}
+
+.ahz-content-params .form dd ul li span {
+	text-align: center;
+	color: #a3a3a3;
+	line-height: 24px;
+	height: 24px;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline
+}
+
+.ahz-content-params .warn {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+
+.ahz-head p {
+	font-size: 14px;
+	color: #555;
+	line-height: 24px
+}
+
+.ahz-head-leftCon small {
+	font-size: 12px
+}
+
+.ahz-head-leftCon a {
+	color: #434a54
+}
+
+.ahz-head-leftCon a:hover {
+	color: #f84858
+}
+
+.ahz-head-leftCon .sep {
+	margin: 0 5px;
+	font-family: sans-serif
+}
+
+
+.ahz-content-gallary p {
+	font-size: 14px;
+	color: #555;
+	line-height: 24px
+}
+
+.ahz-content-gallary .ahz-img-left img {
+	width: 1055px
+}
+
+.ahz-content-gallary .ahz-img-right {
+	_display: inline
+}
+
+#mi2_videowrap {
+	position: fixed;
+	_position: absolute;
+	top: 50%;
+	margin-top: -210px;
+	-webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5)
+}
+
+#mi2_videowrap2 {
+	display: none;
+	left: 50%;
+	z-index: 1006;
+	margin-left: -240px;
+	padding: 0 4px 4px;
+	overflow: hidden;
+	_zoom: 1;
+	background: #e6e4e3;
+	text-align: right;
+	position: fixed;
+	_position: absolute;
+	top: 50%;
+	margin-top: -210px;
+	-webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5)
+}
+
+#mi2_mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1003;
+	background: #ccc;
+	display: none;
+	opacity: .3;
+	filter: alpha(opacity=30)\9;
+	filter: alpha(opacity=30)
+}
+
+.section-footer {
+	width: 1190px;
+	height: 220px;
+	margin: 10px auto 0;
+	padding: 40px 0;
+	border-top: 1px solid #e4e7eb;
+	background-color: #fff
+}
+
+.section-footer ul {
+	margin: 0;
+	padding: 0
+}
+
+.section-footer li {
+	float: left;
+	width: 236px;
+	height: 210px;
+	padding: 0 30px;
+	text-align: center;
+	list-style: none
+}
+
+.section-footer li p {
+	color: #656d78
+}
+
+.section-footer li h4 {
+	margin: 0 0 3px;
+	font-size: 24px;
+	color: #333
+}
+
+.section-footer li a {
+	color: #ff6f3d
+}
+
+.section-footer li .mi3-s {
+	display: block;
+	margin: 0 auto 5px
+}
+
+.section-footer .li-icon {
+	border-left: 1px solid #e6e9ed
+}
+
+.section-footer .li-icon h4 {
+	margin: 0 0 15px;
+	font-size: 18px;
+	color: #333
+}
+
+.section-footer .mi3-icon {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	width: 65px;
+	height: 50px;
+	margin-bottom: 20px
+}
+
+.section-footer .mi3-icon-delivery {
+	background: url(//s1.mi.com/zt/2013/mi3/icon-truck.png) no-repeat 50% 50%
+}
+
+.section-footer .mi3-icon-contact {
+	background: url(//s1.mi.com/zt/2013/mi3/icon-tel.png) no-repeat 50% 50%
+}
+
+.section-footer .mi3-icon-shop-app {
+	background: url(//s1.mi.com/zt/2013/mi3/icon-app.png) no-repeat 50% 50%
+}
+
+.ahz-content-miui h1,
+.ahz-content-miui h2,
+.ahz-content-miui h3,
+.ahz-content-miui h4,
+.ahz-content-miui p,
+.ahz-content-miui li,
+.ahz-content-miui ul,
+.ahz-content-miui dl,
+.ahz-content-miui dt,
+.ahz-content-miui dd {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}

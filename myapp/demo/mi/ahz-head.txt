@@ -1,0 +1,16 @@
+<div class="ahz-head container clearfix">
+			<h2 class="ahz-head-leftCon">红米手机 移动版/联通版
+		      <small><span class="sep">|</span><a class="switch-wcdma" href="#hongmi1s-td/" data-stat-id="0b2dc9e0dae9d81a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;096b832453a88d1b-0b2dc9e0dae9d81a&#39;, &#39;/hongmi1s-td/&#39;, &#39;pcpid&#39;]);">1S 移动版</a></small>
+		      <small><span class="sep">|</span><a class="switch-wcdma" href="#hongmi1s/" data-stat-id="fea7cd757a2c9127" onclick="_msq.push([&#39;trackEvent&#39;, &#39;096b832453a88d1b-fea7cd757a2c9127&#39;, &#39;/hongmi1s/&#39;, &#39;pcpid&#39;]);">1S 联通版/电信版</a></small>
+		      </h2>
+			<div id="J_head_rightCon" class="ahz-head-rightCon">
+				<a class="tab bold" href="javascript:void(0);" data-stat-id="bcf172b5347fe041" onclick="_msq.push([&#39;trackEvent&#39;, &#39;096b832453a88d1b-bcf172b5347fe041&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">功能</a><b>|</b>
+				<a class="tab" href="javascript:void(0);" data-stat-id="7168a219b4651002" onclick="_msq.push([&#39;trackEvent&#39;, &#39;096b832453a88d1b-7168a219b4651002&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">MIUI</a><b>|</b>
+				<a class="tab" href="javascript:void(0);" data-stat-id="f74c7280eb1c313b" onclick="_msq.push([&#39;trackEvent&#39;, &#39;096b832453a88d1b-f74c7280eb1c313b&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">图集</a><b>|</b>
+				<a class="tab" href="javascript:void(0);" data-stat-id="4f66b6ef024e50b0" onclick="_msq.push([&#39;trackEvent&#39;, &#39;096b832453a88d1b-4f66b6ef024e50b0&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">参数</a><b>|</b>
+				<a target="_blank" href="#" class="f-chanel" style="padding-right:5px;" data-stat-id="8189f93c6fad347b" onclick="_msq.push([&#39;trackEvent&#39;, &#39;096b832453a88d1b-8189f93c6fad347b&#39;, &#39;http://bbs.xiaomi.cn/thread-7890241-1-1.html&#39;, &#39;pcpid&#39;]);">评测与讨论</a>
+				<b>|</b>
+				<a target="_blank" href="#" class="f-chanel" data-stat-id="e14700e40ea56c99" onclick="_msq.push([&#39;trackEvent&#39;, &#39;096b832453a88d1b-e14700e40ea56c99&#39;, &#39;//order.mi.com/queue/f2code&#39;, &#39;pcpid&#39;]);">F码通道</a>
+				<a target="_blank" href="#buyphone/hongmi" class="btn btn-primary btn-small" data-stat-id="1a9f6a3b5002b788" onclick="_msq.push([&#39;trackEvent&#39;, &#39;096b832453a88d1b-1a9f6a3b5002b788&#39;, &#39;//www.mi.com/buyphone/hongmi&#39;, &#39;pcpid&#39;]);">立即购买</a>
+			</div>
+		</div>

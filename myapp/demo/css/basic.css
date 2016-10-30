@@ -1,0 +1,222 @@
+/*! normalize.css v3.0.2 | MIT License | github.com/necolas/normalize.css */
+* {
+    margin: 0;
+    padding: 0
+}
+
+html, a, body, p, li, ul, ol, table, span, label, b, s, i, div, strong, h1, h2, h3, h4, h5, h6, em, button, input, textarea, form {
+    font-family: "微软雅黑", Arial, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+body {
+    width:100%;
+    min-width: 1120px;
+
+    margin: 0 auto;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden], template {
+    display: none
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b, strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+ul, ol {
+    list-style: none
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: bold
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td, th {
+    padding: 0
+}
+
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+ul li, ol li {
+    padding: 0;
+    margin: 0
+}
+			/*头部*/
+#header {
+    width: 100%;
+    height: 100px;
+    background: #FFF;
+    overflow: hidden;
+}
+
+#header .wrap {
+    width: 1040px;
+    margin: 0 auto;
+
+}
+
+#header .logo {
+    float: left;
+    height: 100px;
+    padding: 10px 10px 0;
+    overflow: hidden;
+}
+
+#header .nav {
+    float: right;
+}
+
+#header .nav li {
+    padding: 0 20px;
+}
+
+#header .nav li, #header .nav a {
+padding-top:4px;
+    font-size: 18px;
+    float: left;
+}
+
+#header .nav a {
+    color: #808080;
+    line-height: 89px;
+
+}
+
+#header .nav a:active {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    text-decoration: none;
+}
+
+#header .nav li a.current {
+    color: #49c5d7;
+    border-bottom: 3px solid #49c5d7;
+}
+/*低部*/
+#footer {
+    position: relative;
+    padding: 34px 0;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: #464659;
+}

@@ -1,0 +1,240 @@
+/*=======关于我们=======*/
+.banner a{color: #333333;}
+.banner img{display: block;width: 100%}
+.position{font-size: 13px;padding: 15px 0}
+.page-title{font-size: 22px;font-weight: bolder;padding: 10px 0 18px}
+.content{width: 1165px;margin: 0 auto}
+.clearfix:after{display: block;content: "";height: 0;clear: both;overflow: hidden}
+.cur-sub-nav{padding-top: 20px;margin-top: 30px;}
+.cnav-item{float: left;margin-right: 5px;margin-bottom: 30px;position: relative;width: 285px;height: 190px;}
+.cnav-til{position: absolute;z-index: 1;font-size: 16px;font-weight: bolder;width: 100%;height: 50px;line-height:50px;text-align:left;display: block;left: 0;bottom: 0;background-color:#fff;text-indent:20px;
+    -webkit-transition: text-indent 500ms;
+    -moz-transition: text-indent 500ms;
+    -ms-transition: text-indent 500ms;
+    -o-transition: text-indent 500ms;
+    transition: text-indent 500ms;box-shadow:1px 1px 5px #EFEFEF, -1px 1px 5px #EFEFEF}
+.cnav-item:hover .cnav-til{text-indent: 30px}
+.hover .cnav-pic{opacity: .2;-ms-filter: alpha(opacity=20);filter: alpha(opacity=20);}
+.hover .cnav-til{text-decoration: underline}
+.cnav-pic{display: block;}
+.cnav-pic img{display: block}
+.cur-sub-nav a{color: #333333;}
+/*=======关于我们=======*/
+
+/* 本例子css */
+		.slideTxtBox {
+			width: 100%;
+			text-align: center;
+			position: relative;
+			padding-bottom: 40px;
+		}
+		
+		.slideTxtBox .hd {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			background: #FFFFFF;
+		}
+		
+		.slideTxtBox .hd ul {
+			margin: 0 auto;
+			width: 484px;
+			height: 40px;
+		}
+		
+		.slideTxtBox .hd ul li {
+			float: left;
+			width: 240px;
+			height: 40px;
+			text-align: center;
+			color: #333;
+			cursor: pointer;
+		}
+		.slideTxtBox .hd ul li:hover {
+			color: #C52525;
+			background: #fff;
+			border-bottom: 1px solid #C52525;
+		}
+		
+		.slideTxtBox .hd ul li.on {
+			color: #C52525;
+			background: #fff;
+			border-bottom: 1px solid #C52525;
+		}
+		
+		.slideTxtBox .bd ul {
+			padding: 15px;
+			zoom: 1;
+		}
+		
+		.slideTxtBox .bd li {
+			width: 100%;
+		}
+		
+		.slideTxtBox .bd li img {
+			width: 100%;
+			height: 400px;
+		}
+		
+		.slideTxtBox .bd li .date {
+			float: right;
+			color: #999;
+		}
+		
+/*============产品展示====================*/
+.cbg a {
+  color: #333; text-decoration: none;
+}
+.cbg a:hover {
+  color: #c52525;
+}
+.cbg *:active,
+.cbg *:focus {
+  outline: none;
+}
+.cbg a:active {
+  background-color: transparent;
+}
+.cbg em a {
+  color: #c52525;
+}
+  .cbg em a:hover {
+    color: #ff0000;
+  }
+.cbg input, .cbg textarea, .cbg button, .cbg select {
+  font-family: inherit;
+}
+
+.cbg-breadcrumbs {
+  padding: 10px 0; border-top: #eee solid 1px; border-bottom: #eee solid 1px;
+}
+.cbg .cbg-centered > .cbg-wrapper {
+    width: 98%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+ul.cbg-inline > li {
+    float: left;
+}
+.cbg-breadcrumbs .cbg-split {
+    margin: 0 10px;
+}
+ul.cbg-inline a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* Icons */
+.cbg-icon {
+  display: inline-block; vertical-align: middle; width: 40px; height: 25px; margin-right: 2px; text-indent: -9999px;
+  background: url('../images/sprites_cbg_icon.png') no-repeat;
+}
+.ie7 .cbg-icon {
+  display: block; float: left;
+}
+  .cbg-icon-search {
+    width: 13px; height: 16px; background-position: -83px -428px;
+  }
+  .cbg-icon-search:hover {
+    background-position: -83px -448px;
+  }
+  .cbg-icon-cart-small {
+    width: 36px; height: 30px; background-position: -108px -425px;
+  }
+  .cbg-icon-cart-large {
+    width: 80px; height: 53px; background-position: -160px -425px;
+  }
+  .cbg-icon-cart-white {
+    width: 24px; height: 21px; background-position: -115px -466px;
+  }
+  .cbg-icon-plus {
+    width: 13px; height: 13px; background-position: -127px -391px;
+  }
+  .cbg-icon-x1 {
+    width: 13px; height: 13px; background-position: -145px -391px;
+  }
+  .cbg-icon-x2 {
+    width: 14px; height: 14px; background-position: -109px -391px;
+  }
+  .cbg-icon-filter-screen {
+    width: 35px; height: 38px; background-position: -263px -309px;
+  }
+  .cbg-icon-filter-feature {
+    width: 35px; height: 38px; background-position: -303px -309px;
+  }
+  .cbg-icon-filter-camera {
+    width: 35px; height: 38px; background-position: -343px -309px;
+  }
+  .cbg-icon-filter-series {
+    width: 35px; height: 38px; background-position: -383px -309px;
+  }
+  .cbg-icon-mobile-wifi {
+    width: 44px; height: 40px; background-position: -265px -412px;
+  }
+  .cbg-icon-wireless-router {
+    width: 50px; height: 40px; background-position: -320px -412px;
+  }
+  .cbg-icon-mediaq {
+    width: 31px; height: 40px; background-position: -386px -412px;
+  }
+  .cbg-icon-accessories {
+    width: 32px; height: 40px; background-position: -433px -412px;
+  }
+  .cbg-icon-broadband-modem {
+    width: 38px; height: 40px; background-position: -479px -412px;
+  }
+  .cbg-icon-plc {
+    width: 28px; height: 40px; background-position: -525px -412px;
+  }
+  .cbg-icon-dongles {
+    width: 14px; height: 40px; background-position: -571px -410px;
+  }
+  .cbg-icon-wingles {
+    width: 32px; height: 40px; background-position: -599px -412px;
+  }
+  .cbg-icon-red-circle {
+    width: 13px; height: 13px; background-position: -83px -473px;
+  }
+  .cbg-icon-red-question {
+    width: 18px; height: 18px; background-position: -47px -473px;
+  }
+
+
+/*=======产品详情=======*/
+#section-1 {
+				margin-top: 67px;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,276 @@
+.ncbg {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #222;
+	font-family: FrutigerNextLT
+}
+
+.ncbg [class*=h-],
+.ncbg h1,
+.ncbg h2,
+.ncbg h3,
+.ncbg h4 {
+	letter-spacing: 5px;
+	font-weight: 400;
+	text-transform: uppercase
+}
+
+.ncbg .h-xl,
+.ncbg h1 {
+	font-size: 38px;
+	line-height: 50px
+}
+
+.ncbg .h-l,
+.ncbg h2 {
+	font-size: 28px;
+	line-height: 40px
+}
+
+.ncbg .h-m,
+.ncbg h3 {
+	font-size: 21px;
+	line-height: 30px
+}
+
+.ncbg .h-s,
+.ncbg h4 {
+	font-size: 16px;
+	line-height: 20px
+}
+
+.ncbg p {
+	font-size: 16px;
+	line-height: 28px
+}
+
+.ncbg p.big {
+	font-size: 21px;
+	line-height: 37px
+}
+
+.ncbg {
+	font-family: FrutigerNextLT;
+	color: #222
+}
+
+.ncbg,
+.ncbg .container {
+	font-size: 16px;
+	font-size: 1em
+}
+
+.ncbg .container {
+	min-height: 0;
+	background: none
+}
+
+.ncbg h1,
+.ncbg h2,
+.ncbg h3,
+.ncbg h4,
+.ncbg h5,
+.ncbg h6 {
+	font-family: inherit;
+	color: #222
+}
+
+.ncbg .btn {
+	font-size: 12px;
+	display: inline-block;
+	font-weight: 700;
+	letter-spacing: .2em;
+	margin-top: 20px;
+	padding: 20px;
+	text-transform: uppercase;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	float: none;
+	margin-left: 0
+}
+
+.ncbg .btn--large {
+	padding: 20px 40px
+}
+
+.ncbg .btn--primary {
+	background-color: #ef2f34;
+	border: 1px solid #ef2f34;
+	color: #fff;
+	padding: 20px 40px
+}
+
+.ncbg .btn--primary:hover {
+	background-color: #fff;
+	border: 1px solid currentcolor;
+	color: #ef2f34
+}
+
+.ncbg .btn--ghost-light {
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff
+}
+
+.ncbg .btn--ghost-light:hover {
+	background-color: #fff;
+	border: 1px solid #000;
+	color: #000
+}
+
+.ncbg .btn--ghost-dark {
+	background-color: transparent;
+	border: 1px solid #000;
+	color: #000
+}
+
+.ncbg .btn--ghost-dark:hover {
+	background-color: #000;
+	border: 1px solid #000;
+	color: #fff
+}
+
+.ncbg .btn--block {
+	display: block;
+	text-align: center
+}
+
+.ncbg .btn--buy {
+	background-color: #30343b;
+	border: 1px solid #30343b;
+	color: #fff
+}
+
+.ncbg .btn--buy:hover {
+	background-color: #fff;
+	border: 1px solid #30343b;
+	color: #30343b
+}
+
+.ncbg .btn--buy-fixed {
+	display: none
+}
+
+.ncbg .btn--more {
+	margin-top: 0;
+	padding: 0
+}
+
+.ncbg .btn--more:before {
+	content: '+';
+	display: inline-block;
+	text-align: center;
+	padding: 0 8px 0 10px;
+	margin-right: 10px;
+	background-color: #fff
+}
+
+.ncbg .link--share {
+	text-transform: uppercase
+}
+
+body #cbg-footer-links,
+body #cbg-footer-nav {
+	box-sizing: content-box
+}
+
+body #cbg-footer-links p.copyright,
+body #cbg-footer-nav p.copyright {
+	font-size: 11.52px;
+	line-height: 15px
+}
+
+body #cbg-footer-links h1,
+body #cbg-footer-links h2,
+body #cbg-footer-links h3,
+body #cbg-footer-links h4,
+body #cbg-footer-links h5,
+body #cbg-footer-links h6,
+body #cbg-footer-nav h1,
+body #cbg-footer-nav h2,
+body #cbg-footer-nav h3,
+body #cbg-footer-nav h4,
+body #cbg-footer-nav h5,
+body #cbg-footer-nav h6 {
+	text-transform: none;
+	line-height: 17.28px;
+	letter-spacing: normal
+}
+
+body #cbg-main-nav-wrapper {
+	box-sizing: content-box
+}
+
+body #cbg-main-nav-wrapper h1,
+body #cbg-main-nav-wrapper h2,
+body #cbg-main-nav-wrapper h3,
+body #cbg-main-nav-wrapper h4,
+body #cbg-main-nav-wrapper h5,
+body #cbg-main-nav-wrapper h6 {
+	text-transform: none;
+	line-height: 17.28px;
+	letter-spacing: normal
+}
+
+.detail_tab_wrapper.nav-fixed {
+	display: none!important
+}
+
+@media (min-width:768px) {
+	.ncbg .btn--block {
+		display: inline-block;
+		text-align: left
+	}
+	.ncbg .btn--buy-fixed {
+		display: block;
+		margin-top: 0;
+		position: absolute;
+		right: 40px;
+		top: 40px;
+		z-index: 1
+	}
+	.ncbg .btn+.btn {
+		margin-left: 20px
+	}
+}
+
+@media (min-width:1280px) {
+	.ncbg [class*=h-],
+	.ncbg h1,
+	.ncbg h2,
+	.ncbg h3,
+	.ncbg h4 {
+		letter-spacing: 7px
+	}
+	.ncbg .h-xl,
+	.ncbg h1 {
+		font-size: 53.2px;
+		line-height: 70px
+	}
+	.ncbg .h-l,
+	.ncbg h2 {
+		font-size: 39.2px;
+		line-height: 56px
+	}
+	.ncbg .h-m,
+	.ncbg h3 {
+		font-size: 29.4px;
+		line-height: 42px
+	}
+	.ncbg .h-s,
+	.ncbg h4 {
+		font-size: 22.4px;
+		line-height: 28px
+	}
+	.ncbg p {
+		font-size: 22.4px;
+		line-height: 39.2px
+	}
+	.ncbg p.big {
+		font-size: 29.4px;
+		line-height: 51.8px
+	}
+	.ncbg .btn {
+		font-size: 16.8px
+	}
+}

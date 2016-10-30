@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Waterwheel Carousel Demo</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 1
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+    
+
+      });
+    </script>
+
+    <style type="text/css">
+      body {
+        font-family:Arial;
+        font-size:12px;
+        background:#ededed;
+      }
+      .example-desc {
+        margin:3px 0;
+        padding:5px;
+      }
+
+      #carousel {
+        width:960px;
+        border:1px solid #222;
+        height:300px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+        background:#FFF;
+      }
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+       display: block;
+        width:300px;
+        height:300px;
+       border: 1px solid #CCCCCC;
+       border-radius: 50%;
+       
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <h1>Carousel Demo</h1>
+    <div id="carousel">
+      <a href="#"><img src="images/1.jpg" id="item-1" /></a>
+      <a href="#"><img src="images/2.jpg" id="item-2" /></a>
+      <a href="#"><img src="images/3.jpg" id="item-3" /></a>
+      <!--<a href="#"><img src="images/4.jpg" id="item-4" /></a>
+      <a href="#"><img src="images/1.jpg" id="item-6" /></a>
+      <a href="#"><img src="images/2.jpg" id="item-7" /></a>
+      <a href="#"><img src="images/3.jpg" id="item-8" /></a>
+      <a href="#"><img src="images/4.jpg" id="item-9" /></a>-->
+    </div>
+    <a href="#" id="prev">Prev</a> | <a href="#" id="next">Next</a>
+
+  </body>
+</html>
+
